@@ -7,12 +7,40 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Profil</ion-title>
+    <ion-title>
+        <ion-icon name="person"> Profil</ion-icon>
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
+
+  <ion-list>
+
+    <ion-item text-center>
+      <img src="assets/imgs/chat-tete-reveil.jpg" class="img-rounded"> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Nom</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Âge</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Genre</ion-label>
+      <ion-select [(ngModel)]="genre">
+        <ion-option value="male">Mâle</ion-option>
+        <ion-option value="femelle">Femelle</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>
